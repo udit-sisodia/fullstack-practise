@@ -1,5 +1,3 @@
-//  server ko create karna
-// server configuer karna
 const express=require("express")
 const app=express()
 
