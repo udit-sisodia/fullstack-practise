@@ -20,7 +20,7 @@ html{
   color: rgb(206, 204, 204);
   gap: 2rem;
   padding-block: 2rem;
-  padding-inline-start: 2rem;
+  padding-inline: 2rem;
   flex-wrap: wrap;
 }
 
@@ -30,4 +30,14 @@ html{
   border-radius: 0.7rem;
   height: 8rem;
   padding: 2rem;
+}
+.note-create-form{
+  padding-inline:  2rem;
+  padding-block: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.delete{
+  margin-right: 2rem;
 }

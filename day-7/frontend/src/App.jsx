@@ -92,7 +92,7 @@ const App = () => {
             <p>{note.description}</p>
             <button onClick={() => {
               noteHandleDelete(note._id)
-            }}>Delete</button>
+            }} className='delete'>Delete</button>
             <button onClick={() => noteHandleUpdate(note)}>Edit</button>
 
           </div>
