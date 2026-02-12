@@ -11,7 +11,7 @@ const App = () => {
   // console.log("hello integration")
 
   function fetchNotes() {
-    axios.get("http://localhost:3000/api/notes")
+    axios.get("https://fullstack-practise-tpix.onrender.com/api/notes")
       .then(note => {
         setnotes(note.data.notes)
       })
@@ -26,7 +26,7 @@ const App = () => {
     e.preventDefault()
     
     if (id) {
-      axios.patch(`http://localhost:3000/api/notes/${id}`,{
+      axios.patch(`https://fullstack-practise-tpix.onrender.com/api/notes/${id}`,{
         title,
         description
       }).then((res) => {
@@ -38,7 +38,7 @@ const App = () => {
       })
     }
     else {
-      axios.post("http://localhost:3000/api/notes",{
+      axios.post("https://fullstack-practise-tpix.onrender.com/api/notes",{
       title,
       description
     })
@@ -51,7 +51,7 @@ const App = () => {
 
   function noteHandleDelete(noteId) {
     console.log(noteId)
-    axios.delete(`http://localhost:3000/api/notes/${noteId}`)
+    axios.delete(`https://fullstack-practise-tpix.onrender.com/api/notes/${noteId}`)
       .then((res) => {
         console.log(res.data)
         fetchNotes()
